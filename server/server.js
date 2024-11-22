@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const http = require("http");
 const cors = require("cors");
-const port = 8000;
+const port = process.env.PORT || 4000;
 const { Server } = require("socket.io");
 const { log } = require("console");
 const server = http.createServer(app);
@@ -282,7 +282,7 @@ app.get("/", (req, res) => {
 });
 
 server.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Example app listening at port ${port}`);
 });
 
 const originalDeck = [
