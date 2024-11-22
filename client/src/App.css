@@ -1,0 +1,133 @@
+/* .App {
+  text-align: center;
+} */
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  color: red;
+  font-size: xx-large;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.form-container {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.form-container div {
+  margin-bottom: 15px;
+}
+
+input:focus {
+  border: 1px solid #007bff;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  width: 48%;
+  padding: 10px;
+  margin-right: 2%;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  color: #007bff;
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.form-container button:hover {
+  opacity: 0.9;
+}
+.error {
+  color: red;
+}
+
+body,
+html {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.background {
+  background-image: url("../public/background.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  width: 120%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.buttons {
+  display: flex;
+}

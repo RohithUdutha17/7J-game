@@ -1,0 +1,141 @@
+.card-display {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #a69494;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 50px;
+}
+button:disabled {
+  background-color: grey;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-value {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.card-suit {
+  font-size: 24px;
+}
+
+.deck-image img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.buttons-display {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+button:hover {
+  background-color: #fff;
+  color: #007bff;
+}
+.joker-deck {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 80%;
+}
+.joker {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 100px;
+  height: 150px;
+  font-size: 18px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.joker-display {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Aligns children in a column */
+  align-items: center; /* Centers items horizontally */
+  background-color: #a69494; /* Background color for the outer div */
+  border: 1px solid #ddd; /* Optional: border for visual separation */
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+  flex-wrap: wrap;
+}
+.sum-display {
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.user-turn {
+  display: flex;
+  flex-direction: column;
+}
+.user {
+  display: inline;
+  background-color: #007bff;
+  color: white;
+}
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  justify-content: center;
+}
+.heading {
+  color: #007bff;
+}
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cardFromDeck {
+  font-size: 1.5vw;
+}

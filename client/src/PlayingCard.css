@@ -1,0 +1,92 @@
+.playing-card {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 100px;
+  height: 150px;
+  font-size: 18px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease-in-out;
+}
+@keyframes highlight {
+  0% {
+    border: 5px solid red;
+  }
+  100% {
+    border: 1px solid #000;
+  }
+}
+.highlight {
+  /* animation: highlight 3s forwards; */
+  transform: rotate(360deg);
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
+  flex: 1;
+}
+
+.card-left {
+  margin-left: 0;
+  padding-left: 5px;
+}
+
+.card-suit-center {
+  text-align: center;
+  font-size: 43px;
+  font-weight: bold;
+}
+.card-right {
+  rotate: 180deg;
+  margin-right: 5px;
+}
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+.leave-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.leave-button:hover {
+  background-color: #fff;
+  color: red;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.outer-container {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Aligns children in a column */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  padding: 8px; /* Adds some padding around the container */
+  background-color: #a69494; /* Background color for the outer div */
+  border: 1px solid #ddd; /* Optional: border for visual separation */
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+  gap: 5px; /* Space between the card and button */
+  flex-wrap: wrap; /* Allows cards to wrap to the next line if they exceed container width */
+}
+.leave-button-container {
+  display: flex; /* Enables flexbox for the button container */
+  flex-direction: row; /* Aligns button vertically */
+  justify-content: center; /* Centers button vertically */
+  align-items: center; /* Centers button horizontally */
+}
+.input {
+  margin-left: 10px;
+  width: 30px;
+}
