@@ -7,7 +7,7 @@ import GamePage from "./GamePage";
 import Chat from "./Chat";
 import WaitingRoom from "./WaitingRoom";
 
-export const socket = io("http://localhost:8000"); // Replace with your server URL
+export const socket = io("https://sevenj-game.onrender.com"); // Replace with your server URL
 
 const deck = [
   "A♥",
