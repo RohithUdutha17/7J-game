@@ -262,9 +262,6 @@ io.on("connection", (socket) => {
         if (roomInstance.userList.length === 0) {
           delete roomsList[room];
         } else {
-          console.log("user left", username);
-          console.log(roomInstance.userList[roomInstance.currentIndex - 1]);
-
           io.to(room).emit(
             "user left",
             username,
