@@ -305,6 +305,8 @@ function App() {
       (value > groupedCards[indexOfMatchingCard][1].length || value < 1) &&
       card === "7"
     ) {
+      console.log(value, groupedCards[indexOfMatchingCard][1].length);
+
       alert("Invalid operation");
       return;
     }
@@ -312,8 +314,6 @@ function App() {
     let changedValue = value;
     if (card !== "7") {
       changedValue = groupedCards[indexOfMatchingCard][1].length;
-    } else {
-      setValue(groupedCards[indexOfMatchingCard][1].length - value);
     }
 
     let totalCardsLength = totalCards.length;
